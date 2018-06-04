@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CAC90C5F-377A-4B5E-82FB-6A947BE44914}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>PocketGranny</RootNamespace>
+    <AssemblyName>PocketGranny</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AvailableRecipes.cs" />
+    <Compile Include="Commands\AddRecipe.cs" />
+    <Compile Include="Commands\PossibleRecipes\AddPossibleRecipes.cs" />
+    <Compile Include="Commands\PossibleRecipes\DisplayPossibleRecipes.cs" />
+    <Compile Include="Commands\PossibleRecipes\InfoPossibleRecipes.cs" />
+    <Compile Include="Commands\Recipes\AddRecipes.cs" />
+    <Compile Include="Commands\Recipes\ChangeRecipes.cs" />
+    <Compile Include="Commands\Recipes\ClearRecipes.cs" />
+    <Compile Include="Commands\Recipes\CommandsRecipes.cs" />
+    <Compile Include="Commands\Recipes\CookRecipes.cs" />
+    <Compile Include="Commands\Recipes\DisplayCategory.cs" />
+    <Compile Include="Commands\Recipes\DisplayRecipes.cs" />
+    <Compile Include="Commands\Recipes\InfoRecipes.cs" />
+    <Compile Include="Commands\Recipes\RemoveRecipes.cs" />
+    <Compile Include="ListCategoriesCommodity.cs" />
+    <Compile Include="Commands\AddProduct.cs" />
+    <Compile Include="Commands\AvailabilityProducts\CommandsAvailabilityProducts.cs" />
+    <Compile Include="Commands\NecessaryProducts\CommandsNecessaryProducts.cs" />
+    <Compile Include="ListCategoriesRecipes.cs" />
+    <Compile Include="ListRecipes.cs" />
+    <Compile Include="NonStandardizedCommodity.cs" />
+    <Compile Include="GroupCommodity.cs" />
+    <Compile Include="ConsumedCommodity.cs" />
+    <Compile Include="Commands\AvailabilityProducts\AddAvailabilityProducts.cs" />
+    <Compile Include="Commands\AddCheck.cs" />
+    <Compile Include="Commands\NecessaryProducts\AddNecessaryProducts.cs" />
+    <Compile Include="Commands\AvailabilityProducts\ChangeAvailabilityProducts.cs" />
+    <Compile Include="Commands\NecessaryProducts\ChangeNecessaryProducts.cs" />
+    <Compile Include="Commands\AvailabilityProducts\ClearAvailabilityProducts.cs" />
+    <Compile Include="Commands\NecessaryProducts\ClearNecessaryProducts.cs" />
+    <Compile Include="Commands\AvailabilityProducts\DisplayAvailabilityProducts.cs" />
+    <Compile Include="Commands\NecessaryProducts\DisplayNecessaryProducts.cs" />
+    <Compile Include="Commands\AvailabilityProducts\RemoveAvailabilityProducts.cs" />
+    <Compile Include="Commands\NecessaryProducts\RemoveNecessaryProducts.cs" />
+    <Compile Include="ListCommodity.cs" />
+    <Compile Include="ListConsumptionProducts.cs" />
+    <Compile Include="Product.cs" />
+    <Compile Include="Commodity.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StandardizedCommodity.cs" />
+    <Compile Include="Recipe.cs" />
+    <Compile Include="XmlDictionary.cs" />
+    <Compile Include="XmlTimeSpan.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ConsoleUI\ConsoleUI.csproj">
+      <Project>{67c36b1e-7e87-4af5-a579-ef84e2ba71d5}</Project>
+      <Name>ConsoleUI</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DataProduct.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataPacks.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataRecipe.xml" />
+    <Content Include="Text.txt" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

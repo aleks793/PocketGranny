@@ -1,0 +1,369 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfRecipe xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Recipe xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+          categoryName="salad"
+    name="vinaigrette"
+    info="
+    1)Wash the vegetables, put them in a pan, add some water, then put the pan on the hob. Bring to the boil and cook until ready
+    2)Cool the vegetables down completely. Dry cucumbers a little bit.
+    3)Peel the vegetables and drain off water from green peas.
+    4)Cut potatoes, carrots and cucumbers into square pieces.
+    5)Cut beetroots into the same square pieces.
+    6)Put everything in a salad bowl and add green peas.
+    7)Add beetroots.
+    8)Salt to your taste and add some oil. Mix everything carefully
+    9)Tasty Russian vinaigrette salad is ready. Before serving, leave it in the fridge for half an hour.">
+    <weight>600</weight>
+    <expiryIn>4.00:00:00</expiryIn>
+    <products>
+      <!-- Продукты  -->
+
+      <item>
+        <key>
+          <Product categoryName="vegetables" name="potato">
+            <expiryIn>120.00:00:00</expiryIn>
+            <weightUnit>
+              <string>g.</string>
+              <string>kg.</string>
+            </weightUnit>
+          </Product>
+        </key>
+        <value>
+          <float>120</float>
+        </value>
+      </item>
+      
+      <item>
+        <key>
+          <Product categoryName="vegetables" name="carrot">
+            <expiryIn>60.00:00:00</expiryIn>
+            <weightUnit>
+              <string>g.</string>
+              <string>kg.</string>
+            </weightUnit>
+          </Product>
+        </key>
+        <value>
+          <float>120</float>
+        </value>
+      </item>
+      
+      <item>
+        <key>
+          <Product categoryName="vegetables" name="beetroot">
+            <expiryIn>60.00:00:00</expiryIn>
+            <weightUnit>
+              <string>g.</string>
+              <string>kg.</string>
+            </weightUnit>
+          </Product>
+        </key>
+        <value>
+          <float>100</float>
+        </value>
+      </item>
+      
+      <item>
+        <key>
+          <Product categoryName="vegetables" name="pickled cucumbers">
+            <expiryIn>360.00:00:00</expiryIn>
+            <weightUnit>
+              <string>g.</string>
+              <string>kg.</string>
+            </weightUnit>
+          </Product>
+        </key>
+        <value>
+          <float>150</float>
+        </value>
+      </item>
+
+      <item>
+        <key>
+          <Product categoryName="vegetables" name="canned green peas">
+            <expiryIn>360.00:00:00</expiryIn>
+            <weightUnit>
+              <string>g.</string>
+              <string>kg.</string>
+            </weightUnit>
+          </Product>
+        </key>
+        <value>
+          <float>150</float>
+        </value>
+      </item>
+    </products>
+    <weightUnit>
+      <string>g.</string>
+      <string>kg.</string>
+    </weightUnit>
+  </Recipe>
+
+  <Recipe xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+          categoryName="lunch"
+          name="scrambled eggs"
+          info="
+          INGREDIENTS:
+          4 eggs 
+          2 teaspoons vegetable oil
+          Salt and pepper to taste
+          100 ml water
+          1)Heat up vegetable oil in a frying pan over high heat
+          2)While the oil is heating up, break the eggs in a bowl.
+          3)Whip the eggs with a whisk to an even consistency
+          4)The most important point: add 100 ml of boiled water of room temperature to the beaten eggs. Whisk to an even consistency.
+          5)Pour the egg mixture into the hot frying pan.
+          6)When the eggs are slightly fried, start to stir them with a wooden spatula.
+          7)Fry the eggs over medium heat, stirring constantly with a spatula. Fry until the eggs acquire the desired consistency.
+          8)That is it – the perfect scrambled eggs are ready. The dish can be served at the rate of 2 eggs for 1 serving. Add salt and pepper when the eggs are on a plate.
+          ">
+    <weight>250</weight>
+    <expiryIn>10.00:00:00</expiryIn>
+    <products>
+      <item>
+        <key>
+          <Product name="egg" categoryName="eggs products">
+            <expiryIn>20</expiryIn>
+            <weightUnit>
+              <string>p.</string>
+            </weightUnit>
+          </Product>
+        </key>
+        <value>
+          <float>4</float>
+        </value>
+      </item>
+      
+      <item>
+        <key>
+          <Product name="water" categoryName="drink">
+            <expiryIn>360</expiryIn>
+            <weightUnit>
+              <string>ml.</string>
+              <string>L.</string>
+            </weightUnit>
+          </Product>
+        </key>
+        <value>
+          <float>100</float>
+        </value>
+      </item>
+    </products>
+    <weightUnit>
+      <string>g.</string>
+    </weightUnit>
+  </Recipe>
+
+
+  <Recipe xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+          categoryName="salad"
+          name="okroshka"
+          info="INGREDIENTS
+          400g boiled sausage 
+          4 potatoes
+          5 cucumbers
+          4 boiled eggs
+          Greens to taste
+          Sour cream to taste
+          Salt, pepper to taste
+          Boiled water and kefir 1% fat
+          ">
+    <weight>1000</weight>
+    <expiryIn>5.00:00:00</expiryIn>
+    <products>
+      <item>
+        <key>
+          <Product name="sausage" categoryName="meat">
+            <expiryIn>20</expiryIn>
+            <weightUnit>
+              <string>g.</string>
+              <string>kg.</string>
+            </weightUnit>
+          </Product>
+        </key>
+        <value>
+          <float>400</float>
+        </value>
+      </item>
+      
+      <item>
+        <key>
+          <Product name="potato" categoryName="vegetables">
+            <expiryIn>120</expiryIn>
+            <weightUnit>
+              <string>g.</string>
+              <string>kg.</string>
+            </weightUnit>
+          </Product>
+        </key>
+        <value>
+          <float>200</float>
+        </value>
+      </item>
+      
+      <item>
+        <key>
+          <Product name="egg" categoryName="eggs products">
+            <expiryIn>20</expiryIn>
+            <weightUnit>
+              <string>p.</string>
+            </weightUnit>
+          </Product>
+        </key>
+        <value>
+          <float>4</float>
+        </value>
+      </item>
+      
+      <item>
+        <key>
+          <Product name="water" categoryName="drink">
+            <expiryIn>360</expiryIn>
+            <weightUnit>
+              <string>ml.</string>
+              <string>L.</string>
+            </weightUnit>
+          </Product>
+        </key>
+        <value>
+          <float>2000</float>
+        </value>
+      </item>
+      
+      <item>
+        <key>
+          <Product name="kefir" categoryName="dairy">
+            <expiryIn>7</expiryIn>
+            <weightUnit>
+              <string>ml.</string>
+              <string>L.</string>
+            </weightUnit>
+          </Product>
+        </key>
+        <value>
+          <float>1000</float>
+        </value>
+      </item>
+    </products>
+
+    <weightUnit>
+      <string>kg.</string>
+    </weightUnit>
+  </Recipe>
+
+
+  <Recipe xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+             categoryName="salad"
+       name="garnish the salad"
+       info="INGREDIENTS
+              250g crab sticks
+              200g corn
+              4 eggs
+              100g rice
+              1 cucumber
+              4 tablespoons mayonnaise
+              1)Prepare all the necessary ingredients. Cook rice until ready with a bit of salt.
+              2)Cut crab sticks into small square pieces
+              3)Boil eggs hard and cut them into the same square pieces as crab sticks.
+              4)Cut cucumber into small pieces. If the skin doesn't taste bitter, then you don't have to peel it.
+              5)Mix all the ingredients - crab sticks, eggs, corn, cucumber, and rice.
+              6)Add mayonnaise and mix thoroughly
+              7)Line a deep bowl or a salad bowl with cling film and put salad in it. Press firmly. Cover with a plate and turn it over. Remove cling film.
+              8)Garnish the salad to your taste and serve. Enjoy!">
+    <weight>800</weight>
+    <expiryIn>3.00:00:00</expiryIn>
+    <products>
+      <item>
+        <key>
+          <Product name="crab sticks" categoryName="fish products">
+            <expiryIn>360</expiryIn>
+            <weightUnit>
+              <string>g.</string>
+              <string>kg.</string>
+            </weightUnit>
+          </Product>
+        </key>
+        <value>
+          <float>250</float>
+        </value>
+      </item>
+
+      <item>
+        <key>
+          <Product name="corn" categoryName="vegetables">
+            <expiryIn>7</expiryIn>
+            <weightUnit>
+              <string>g.</string>
+              <string>kg.</string>
+            </weightUnit>
+          </Product>
+        </key>
+        <value>
+          <float>200</float>
+        </value>
+      </item>
+
+      <item>
+        <key>
+          <Product name="egg" categoryName="eggs products">
+            <expiryIn>20</expiryIn>
+            <weightUnit>
+              <string>p.</string>
+            </weightUnit>
+          </Product>
+        </key>
+        <value>
+          <float>4</float>
+        </value>
+      </item>
+
+      <item>
+        <key>
+          <Product name="rice" categoryName="whole grain">
+            <expiryIn>360</expiryIn>
+            <weightUnit>
+              <string>g.</string>
+              <string>kg.</string>
+            </weightUnit>
+          </Product>
+        </key>
+        <value>
+          <float>100</float>
+        </value>
+      </item>
+
+      <item>
+        <key>
+          <Product name="cucumber" categoryName="vegetables">
+            <expiryIn>7</expiryIn>
+            <weightUnit>
+              <string>g.</string>
+              <string>kg.</string>
+            </weightUnit>
+          </Product>
+        </key>
+        <value>
+          <float>60</float>
+        </value>
+      </item>
+
+      <item>
+        <key>
+          <Product name="mayonnaise" categoryName="eggs products">
+            <expiryIn>90</expiryIn>
+            <weightUnit>
+              <string>g.</string>
+              <string>kg.</string>
+            </weightUnit>
+          </Product>
+        </key>
+        <value>
+          <float>120</float>
+        </value>
+      </item>
+    </products>
+    <weightUnit>
+      <string>kg.</string>
+    </weightUnit>
+  </Recipe>
+</ArrayOfRecipe>

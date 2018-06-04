@@ -1,0 +1,267 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfProduct xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <!-- Молочные продукты -->
+  <Product name="milk" categoryName="dairy">
+    <expiryIn>10</expiryIn>
+    <weightUnit>
+      <string>ml.</string>
+      <string>L.</string>
+    </weightUnit>
+  </Product>
+  
+  <Product name="yogurt" categoryName="dairy">
+    <expiryIn>7</expiryIn>
+    <weightUnit>
+      <string>g.</string>
+      <string>kg.</string>
+    </weightUnit>
+  </Product>
+  
+  <Product name="sour cream" categoryName="dairy">
+    <expiryIn>30</expiryIn>
+    <weightUnit>
+      <string>g.</string>
+      <string>kg.</string>
+    </weightUnit>
+  </Product>
+  
+  <!-- Зерновые и злаковые продукты -->
+  <Product name="bread" categoryName="whole grain">
+    <expiryIn>3</expiryIn>
+    <weightUnit>
+      <string>g.</string>
+      <string>kg.</string>
+    </weightUnit>
+  </Product>
+  
+  <!-- Овощи и фрукты -->
+  <Product name="potato" categoryName="vegetables">
+    <expiryIn>120</expiryIn>
+    <weightUnit>
+      <string>g.</string>
+      <string>kg.</string>
+    </weightUnit>
+  </Product>
+  
+  <Product name="tomato" categoryName="vegetables">
+    <expiryIn>7</expiryIn>
+    <weightUnit>
+      <string>g.</string>
+      <string>kg.</string>
+    </weightUnit>
+  </Product>
+  
+  <!-- Мясные изделия -->
+  <Product name="meat" categoryName="meat products">
+    <expiryIn>180</expiryIn>
+    <weightUnit>
+      <string>g.</string>
+      <string>kg.</string>
+    </weightUnit>
+  </Product>
+  
+  <Product name="sausage" categoryName="meat products">
+    <expiryIn>3</expiryIn>
+    <weightUnit>
+      <string>g.</string>
+      <string>kg.</string>
+    </weightUnit>
+  </Product>
+  
+  <!-- Рыбные изделия -->
+  <Product name="fish" categoryName="fish products">
+    <expiryIn>60</expiryIn>
+    <weightUnit>
+      <string>g.</string>
+      <string>kg.</string>
+    </weightUnit>
+  </Product>
+  
+  <!-- Кондитерские товары -->
+  <Product name="milk chocolate" categoryName="sweets">
+    <expiryIn>300</expiryIn>
+    <weightUnit>
+      <string>g.</string>
+      <string>kg.</string>
+    </weightUnit>
+  </Product>
+  
+  <!-- Яичные товары -->
+  <Product name="egg" categoryName="eggs products">
+    <expiryIn>20</expiryIn>
+    <weightUnit>
+      <string>p.</string>
+    </weightUnit>
+  </Product>
+  
+  <!-- Безалкогольные напитки -->
+  <Product name="coca-cola" categoryName="drink">
+    <expiryIn>360</expiryIn>
+    <weightUnit>
+      <string>ml.</string>
+      <string>L.</string>
+    </weightUnit>
+  </Product>
+  
+  <!-- Табачные изделия -->
+  <Product name="bond" categoryName="smokables">
+    <expiryIn>10000</expiryIn>
+    <weightUnit>
+      <string>mg.</string>
+      <string>g.</string>
+    </weightUnit>
+  </Product>
+  
+  <!-- Винно-водочная продукция -->
+  <Product name="whiskey" categoryName="alcogol">
+    <expiryIn>10000</expiryIn>
+    <weightUnit>
+      <string>ml.</string>
+      <string>L.</string>
+    </weightUnit>
+  </Product>
+  
+  <Product name="cognac" categoryName="alcogol">
+    <expiryIn>10000</expiryIn>
+    <weightUnit>
+      <string>ml.</string>
+      <string>L.</string>
+    </weightUnit>
+  </Product>
+  
+  <Product name="wine" categoryName="alcogol">
+    <expiryIn>10000</expiryIn>
+    <weightUnit>
+      <string>ml.</string>
+      <string>L.</string>
+    </weightUnit>
+  </Product>
+  
+  <Product name="beer" categoryName="alcogol">
+    <expiryIn>10000</expiryIn>
+    <weightUnit>
+      <string>ml.</string>
+      <string>L.</string>
+    </weightUnit>
+  </Product>
+  
+  <Product name="brandy" categoryName="alcogol">
+    <expiryIn>10000</expiryIn>
+    <weightUnit>
+      <string>ml.</string>
+      <string>L.</string>
+    </weightUnit>
+  </Product>
+  
+  <Product name="champagne" categoryName="alcogol">
+    <expiryIn>10000</expiryIn>
+    <weightUnit>
+      <string>ml.</string>
+      <string>L.</string>
+    </weightUnit>
+  </Product>
+  
+  <Product name="rum" categoryName="alcogol">
+    <expiryIn>10000</expiryIn>
+    <weightUnit>
+      <string>ml.</string>
+      <string>L.</string>
+    </weightUnit>
+  </Product>
+  
+  <Product name="cocktail" categoryName="alcogol">
+    <expiryIn>10000</expiryIn>
+    <weightUnit>
+      <string>ml.</string>
+      <string>L.</string>
+    </weightUnit>
+  </Product>
+  
+  <Product name="carrot" categoryName="vegetables">
+    <expiryIn>60.00:00:00</expiryIn>
+    <weightUnit>
+      <string>g.</string>
+      <string>kg.</string>
+    </weightUnit>
+  </Product>
+  
+  <Product name="beetroot" categoryName="vegetables">
+    <expiryIn>60.00:00:00</expiryIn>
+    <weightUnit>
+      <string>g.</string>
+      <string>kg.</string>
+    </weightUnit>
+  </Product>
+  
+  <Product name="pickled cucumbers" categoryName="vegetables">
+    <expiryIn>360.00:00:00</expiryIn>
+    <weightUnit>
+      <string>g.</string>
+      <string>kg.</string>
+    </weightUnit>
+  </Product>
+  
+  <Product name="canned green peas" categoryName="vegetables">
+    <expiryIn>360.00:00:00</expiryIn>
+    <weightUnit>
+      <string>g.</string>
+      <string>kg.</string>
+    </weightUnit>
+  </Product>
+  
+  <Product name="water" categoryName="drink">
+    <expiryIn>360</expiryIn>
+    <weightUnit>
+      <string>ml.</string>
+      <string>L.</string>
+    </weightUnit>
+  </Product>
+  
+  <Product name="kefir" categoryName="dairy">
+    <expiryIn>7</expiryIn>
+    <weightUnit>
+      <string>ml.</string>
+      <string>L.</string>
+    </weightUnit>
+  </Product>
+  
+  <Product name="crab sticks" categoryName="fish products">
+    <expiryIn>360</expiryIn>
+    <weightUnit>
+      <string>g.</string>
+      <string>kg.</string>
+    </weightUnit>
+  </Product>
+  
+  <Product name="corn" categoryName="vegetables">
+    <expiryIn>7</expiryIn>
+    <weightUnit>
+      <string>g.</string>
+      <string>kg.</string>
+    </weightUnit>
+  </Product>
+  
+  <Product name="rice" categoryName="whole grain">
+    <expiryIn>360</expiryIn>
+    <weightUnit>
+      <string>g.</string>
+      <string>kg.</string>
+    </weightUnit>
+  </Product>
+  
+  <Product name="cucumber" categoryName="vegetables">
+    <expiryIn>7</expiryIn>
+    <weightUnit>
+      <string>g.</string>
+      <string>kg.</string>
+    </weightUnit>
+  </Product>
+  
+  <Product name="mayonnaise" categoryName="eggs products">
+    <expiryIn>90</expiryIn>
+    <weightUnit>
+      <string>g.</string>
+      <string>kg.</string>
+    </weightUnit>
+  </Product>
+</ArrayOfProduct>

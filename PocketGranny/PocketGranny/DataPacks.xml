@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ArrayOfPack>
+  <StandardizedCommodity name="milk">
+    <weight>500</weight>
+    <weight>1000</weight>
+  </StandardizedCommodity>
+  <StandardizedCommodity name="yogurt">
+    <weight>250</weight>
+    <weight>500</weight>
+    <weight>1000</weight>
+  </StandardizedCommodity>
+  <StandardizedCommodity name="coca-cola">
+    <weight>200</weight>
+    <weight>500</weight>
+    <weight>1000</weight>
+    <weight>1500</weight>
+    <weight>2000</weight>
+  </StandardizedCommodity>
+  <StandardizedCommodity name="egg">
+    <weight>10</weight>
+  </StandardizedCommodity>
+  <StandardizedCommodity name="canned green peas">
+    <weight>250</weight>
+  </StandardizedCommodity>
+  <StandardizedCommodity name="kefir">
+    <weight>250</weight>
+    <weight>500</weight>
+    <weight>1000</weight>
+  </StandardizedCommodity>
+  <StandardizedCommodity name="water">
+    <weight>500</weight>
+    <weight>1000</weight>
+    <weight>2000</weight>
+  </StandardizedCommodity>
+  <StandardizedCommodity name="rice">
+    <weight>250</weight>
+    <weight>500</weight>
+    <weight>1000</weight>
+  </StandardizedCommodity>
+  <StandardizedCommodity name="mayonnaise">
+    <weight>250</weight>
+    <weight>500</weight>
+  </StandardizedCommodity>
+  <StandardizedCommodity name="crab sticks">
+    <weight>250</weight>
+    <weight>500</weight>
+    <weight>1000</weight>
+  </StandardizedCommodity>
+</ArrayOfPack>

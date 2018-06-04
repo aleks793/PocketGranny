@@ -1,0 +1,6 @@
+﻿Date: 2018-04-20
+milk 500
+milk 1000
+bread 200
+bread 500
+fish 1000
