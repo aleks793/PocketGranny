@@ -5,13 +5,10 @@ namespace PocketGranny.Commands.Recipes
 {
     public class ClearRecipes : ICommand
     {
-        private Application _app;
-
         private ListCategoriesRecipes _listCategoriesRecipes;
 
-        public ClearRecipes(Application app, ListCategoriesRecipes listCategoriesRecipes)
+        public ClearRecipes(ListCategoriesRecipes listCategoriesRecipes)
         {
-            _app = app;
             _listCategoriesRecipes = listCategoriesRecipes;
         }
 

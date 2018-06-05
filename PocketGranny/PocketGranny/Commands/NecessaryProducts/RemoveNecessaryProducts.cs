@@ -7,15 +7,12 @@ namespace PocketGranny.Commands.NecessaryProducts
 {
     public class RemoveNecessaryProducts : ICommand
     {
-        private Application _app;
-
         private ListCategoriesCommodity _availabilityProducts;
 
         private ListCategoriesCommodity _necessaryProducts;
 
-        public RemoveNecessaryProducts(Application app, ListCategoriesCommodity availabilityProducts, ListCategoriesCommodity necessaryProducts)
+        public RemoveNecessaryProducts(ListCategoriesCommodity availabilityProducts, ListCategoriesCommodity necessaryProducts)
         {
-            _app = app;
             _availabilityProducts = availabilityProducts;
             _necessaryProducts = necessaryProducts;
         }

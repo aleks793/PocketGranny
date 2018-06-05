@@ -8,13 +8,6 @@ namespace PocketGranny.Commands
 {
     public class AddRecipe : ICommand
     {
-        private Application _app;
-
-        public AddRecipe(Application app)
-        {
-            _app = app;
-        }
-
         public string Name => "add-recipe";
 
         public string Help => "Добавить рецепт в базу";

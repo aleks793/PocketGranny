@@ -6,8 +6,6 @@ namespace PocketGranny.Commands.Recipes
 {
     public class DisplayRecipes : ICommand
     {
-        private Application _app;
-
         private ListCategoriesRecipes _listCategoriesRecipes;
 
         private AvailableRecipes _availableRecipes;
@@ -16,10 +14,9 @@ namespace PocketGranny.Commands.Recipes
 
         private ListCategoriesCommodity _necessaryProducts;
 
-        public DisplayRecipes(Application app, ListCategoriesRecipes listCategoriesRecipes, AvailableRecipes availableRecipes, 
+        public DisplayRecipes(ListCategoriesRecipes listCategoriesRecipes, AvailableRecipes availableRecipes, 
             ListCategoriesCommodity availabilityProducts, ListCategoriesCommodity necessaryProducts)
         {
-            _app = app;
             _listCategoriesRecipes = listCategoriesRecipes;
             _availableRecipes = availableRecipes;
             _availabilityProducts = availabilityProducts;
@@ -65,9 +62,9 @@ namespace PocketGranny.Commands.Recipes
             appRecipes.AddCommand(new ExitCommand(appRecipes));
             appRecipes.AddCommand(new ExplainCommand(appRecipes));
             appRecipes.AddCommand(new HelpCommand(appRecipes));
-            appRecipes.AddCommand(new AddPossibleRecipes(appRecipes, _availableRecipes.RecommendedRecipes, _listCategoriesRecipes));
-            appRecipes.AddCommand(new InfoPossibleRecipes(appRecipes, _availableRecipes.RecommendedRecipes, _availabilityProducts, _necessaryProducts));
-            appRecipes.AddCommand(new DisplayPossibleRecipes(appRecipes, _availableRecipes.RecommendedRecipes));
+            appRecipes.AddCommand(new AddPossibleRecipes(_availableRecipes.RecommendedRecipes, _listCategoriesRecipes));
+            appRecipes.AddCommand(new InfoPossibleRecipes(_availableRecipes.RecommendedRecipes, _availabilityProducts, _necessaryProducts));
+            appRecipes.AddCommand(new DisplayPossibleRecipes(_availableRecipes.RecommendedRecipes));
 
             appRecipes.FindCommand("display").Execute();
 

@@ -6,15 +6,12 @@ namespace PocketGranny.Commands.NecessaryProducts
 {
     public class ClearNecessaryProducts : ICommand
     {
-        private Application _app;
-
         private ListCategoriesCommodity _availabilityProducts;
 
         private ListCategoriesCommodity _necessaryProducts;
 
-        public ClearNecessaryProducts(Application app, ListCategoriesCommodity availabilityProducts, ListCategoriesCommodity necessaryProducts)
+        public ClearNecessaryProducts(ListCategoriesCommodity availabilityProducts, ListCategoriesCommodity necessaryProducts)
         {
-            _app = app;
             _availabilityProducts = availabilityProducts;
             _necessaryProducts = necessaryProducts;
         }

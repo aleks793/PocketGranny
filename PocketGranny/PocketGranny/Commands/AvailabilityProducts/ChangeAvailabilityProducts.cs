@@ -5,17 +5,14 @@ namespace PocketGranny.Commands.AvailabilityProducts
 {
     public class ChangeAvailabilityProducts : ICommand
     {
-        private Application _app;
-
         private ListCategoriesCommodity _availabilityProducts;
 
         private ListConsumptionProducts _consumptionProducts;
 
         private AvailableRecipes _availableRecipes;
 
-        public ChangeAvailabilityProducts(Application app, ListCategoriesCommodity availabilityProducts, ListConsumptionProducts consumptionProducts, AvailableRecipes availableRecipes)
+        public ChangeAvailabilityProducts(ListCategoriesCommodity availabilityProducts, ListConsumptionProducts consumptionProducts, AvailableRecipes availableRecipes)
         {
-            _app = app;
             _availabilityProducts = availabilityProducts;
             _consumptionProducts = consumptionProducts;
             _availableRecipes = availableRecipes;

@@ -6,17 +6,14 @@ namespace PocketGranny.Commands.Recipes
 {
     public class InfoRecipes : ICommand
     {
-        private Application _app;
-
         private ListCategoriesRecipes _listCategoriesRecipes;
 
         private ListCategoriesCommodity _availabilityProducts;
 
         private ListCategoriesCommodity _necessaryProducts;
 
-        public InfoRecipes(Application app, ListCategoriesRecipes listCategoriesRecipes, ListCategoriesCommodity availabilityProducts, ListCategoriesCommodity necessaryProducts)
+        public InfoRecipes(ListCategoriesRecipes listCategoriesRecipes, ListCategoriesCommodity availabilityProducts, ListCategoriesCommodity necessaryProducts)
         {
-            _app = app;
             _listCategoriesRecipes = listCategoriesRecipes;
             _availabilityProducts = availabilityProducts;
             _necessaryProducts = necessaryProducts;

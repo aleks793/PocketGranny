@@ -9,13 +9,6 @@ namespace PocketGranny.Commands
 {
     public class AddProduct : ICommand
     {
-        private Application _app;
-
-        public AddProduct(Application app)
-        {
-            _app = app;
-        }
-
         public string Name => "add-product";
 
         public string Help => "Добавить продукт в базу";

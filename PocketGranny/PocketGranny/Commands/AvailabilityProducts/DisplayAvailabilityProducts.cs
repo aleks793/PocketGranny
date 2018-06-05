@@ -5,13 +5,10 @@ namespace PocketGranny.Commands.AvailabilityProducts
 {
     public class DisplayAvailabilityProducts : ICommand
     {
-        private Application _app;
-
         private ListCategoriesCommodity _availabilityProducts;
 
-        public DisplayAvailabilityProducts(Application app, ListCategoriesCommodity availabilityProducts)
+        public DisplayAvailabilityProducts(ListCategoriesCommodity availabilityProducts)
         {
-            _app = app;
             _availabilityProducts = availabilityProducts;
         }
 

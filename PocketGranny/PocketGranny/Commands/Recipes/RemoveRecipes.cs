@@ -7,13 +7,10 @@ namespace PocketGranny.Commands.Recipes
 {
     public class RemoveRecipes : ICommand
     {
-        private Application _app;
-
         private ListCategoriesRecipes _listCategoriesRecipes;
 
-        public RemoveRecipes(Application app, ListCategoriesRecipes listCategoriesRecipes)
+        public RemoveRecipes(ListCategoriesRecipes listCategoriesRecipes)
         {
-            _app = app;
             _listCategoriesRecipes = listCategoriesRecipes;
         }
 

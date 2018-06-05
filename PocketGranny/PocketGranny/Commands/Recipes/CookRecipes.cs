@@ -6,8 +6,6 @@ namespace PocketGranny.Commands.Recipes
 {
     public class CookRecipes : ICommand
     {
-        private Application _app;
-
         private ListCategoriesRecipes _listCategoriesRecipes;
 
         private ListCategoriesCommodity _availabilityProducts;
@@ -16,9 +14,8 @@ namespace PocketGranny.Commands.Recipes
 
         private ListConsumptionProducts _consumptionProducts;
 
-        public CookRecipes(Application app, ListCategoriesRecipes listCategoriesRecipes, ListCategoriesCommodity availabilityProducts, ListCategoriesCommodity necessaryProducts, ListConsumptionProducts consumptionProducts)
+        public CookRecipes(ListCategoriesRecipes listCategoriesRecipes, ListCategoriesCommodity availabilityProducts, ListCategoriesCommodity necessaryProducts, ListConsumptionProducts consumptionProducts)
         {
-            _app = app;
             _listCategoriesRecipes = listCategoriesRecipes;
             _availabilityProducts = availabilityProducts;
             _necessaryProducts = necessaryProducts;

@@ -7,8 +7,6 @@ namespace PocketGranny.Commands.AvailabilityProducts
 {
     public class RemoveAvailabilityProducts : ICommand
     {
-        private Application _app;
-
         private ListCategoriesCommodity _availabilityProducts;
 
         private ListCategoriesCommodity _necessaryProducts;
@@ -17,10 +15,9 @@ namespace PocketGranny.Commands.AvailabilityProducts
 
         private AvailableRecipes _availableRecipes;
 
-        public RemoveAvailabilityProducts(Application app, ListCategoriesCommodity availabilityProducts, ListCategoriesCommodity necessaryProducts, 
+        public RemoveAvailabilityProducts(ListCategoriesCommodity availabilityProducts, ListCategoriesCommodity necessaryProducts, 
             ListConsumptionProducts consumptionProducts, AvailableRecipes availableRecipes)
         {
-            _app = app;
             _availabilityProducts = availabilityProducts;
             _necessaryProducts = necessaryProducts;
             _consumptionProducts = consumptionProducts;

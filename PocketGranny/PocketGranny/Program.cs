@@ -88,9 +88,9 @@ namespace PocketGranny
             _app.AddCommand(new ExitCommand(_app));
             _app.AddCommand(new ExplainCommand(_app));
             _app.AddCommand(new HelpCommand(_app));
-            _app.AddCommand(new AddCheck(_app, _availabilityProducts, _necessaryProducts, _consumptionProducts));
-            _app.AddCommand(new AddProduct(_app));
-            _app.AddCommand(new AddRecipe(_app));
+            _app.AddCommand(new AddCheck(_availabilityProducts, _necessaryProducts, _consumptionProducts));
+            _app.AddCommand(new AddProduct());
+            _app.AddCommand(new AddRecipe());
             _app.AddCommand(new CommandsAvailabilityProducts(_appAvailabilityProducts, _availabilityProducts, _consumptionProducts, _availableRecipes));
             _app.AddCommand(new CommandsNecessaryProducts(_appNecessaryProducts));
             _app.AddCommand(new CommandsRecipes(_appRecipes));
@@ -101,11 +101,11 @@ namespace PocketGranny
             _appAvailabilityProducts.AddCommand(new ExitCommand(_appAvailabilityProducts));
             _appAvailabilityProducts.AddCommand(new ExplainCommand(_appAvailabilityProducts));
             _appAvailabilityProducts.AddCommand(new HelpCommand(_appAvailabilityProducts));
-            _appAvailabilityProducts.AddCommand(new AddAvailabilityProducts(_appAvailabilityProducts, _availabilityProducts, _necessaryProducts, _consumptionProducts, _availableRecipes));
-            _appAvailabilityProducts.AddCommand(new DisplayAvailabilityProducts(_appAvailabilityProducts, _availabilityProducts));
-            _appAvailabilityProducts.AddCommand(new ChangeAvailabilityProducts(_appAvailabilityProducts, _availabilityProducts, _consumptionProducts, _availableRecipes));
-            _appAvailabilityProducts.AddCommand(new RemoveAvailabilityProducts(_appAvailabilityProducts, _availabilityProducts, _necessaryProducts, _consumptionProducts, _availableRecipes));
-            _appAvailabilityProducts.AddCommand(new ClearAvailabilityProducts(_appAvailabilityProducts, _availabilityProducts, _necessaryProducts, _consumptionProducts, _availableRecipes));
+            _appAvailabilityProducts.AddCommand(new AddAvailabilityProducts(_availabilityProducts, _necessaryProducts, _consumptionProducts, _availableRecipes));
+            _appAvailabilityProducts.AddCommand(new DisplayAvailabilityProducts(_availabilityProducts));
+            _appAvailabilityProducts.AddCommand(new ChangeAvailabilityProducts(_availabilityProducts, _consumptionProducts, _availableRecipes));
+            _appAvailabilityProducts.AddCommand(new RemoveAvailabilityProducts(_availabilityProducts, _necessaryProducts, _consumptionProducts, _availableRecipes));
+            _appAvailabilityProducts.AddCommand(new ClearAvailabilityProducts(_availabilityProducts, _necessaryProducts, _consumptionProducts, _availableRecipes));
         }
 
         private static void SetAppNecessaryProducts()
@@ -113,11 +113,11 @@ namespace PocketGranny
             _appNecessaryProducts.AddCommand(new ExitCommand(_appNecessaryProducts));
             _appNecessaryProducts.AddCommand(new ExplainCommand(_appNecessaryProducts));
             _appNecessaryProducts.AddCommand(new HelpCommand(_appNecessaryProducts));
-            _appNecessaryProducts.AddCommand(new AddNecessaryProducts(_appNecessaryProducts, _availabilityProducts, _necessaryProducts));
-            _appNecessaryProducts.AddCommand(new DisplayNecessaryProducts(_appNecessaryProducts, _availabilityProducts, _necessaryProducts, _consumptionProducts));
-            _appNecessaryProducts.AddCommand(new ChangeNecessaryProducts(_appNecessaryProducts, _necessaryProducts));
-            _appNecessaryProducts.AddCommand(new RemoveNecessaryProducts(_appNecessaryProducts, _availabilityProducts, _necessaryProducts));
-            _appNecessaryProducts.AddCommand(new ClearNecessaryProducts(_appNecessaryProducts, _availabilityProducts, _necessaryProducts));
+            _appNecessaryProducts.AddCommand(new AddNecessaryProducts(_availabilityProducts, _necessaryProducts));
+            _appNecessaryProducts.AddCommand(new DisplayNecessaryProducts(_availabilityProducts, _necessaryProducts, _consumptionProducts));
+            _appNecessaryProducts.AddCommand(new ChangeNecessaryProducts(_necessaryProducts));
+            _appNecessaryProducts.AddCommand(new RemoveNecessaryProducts(_availabilityProducts, _necessaryProducts));
+            _appNecessaryProducts.AddCommand(new ClearNecessaryProducts(_availabilityProducts, _necessaryProducts));
         }
 
         private static void SetAppRecipes()
@@ -125,14 +125,14 @@ namespace PocketGranny
             _appRecipes.AddCommand(new ExitCommand(_appRecipes));
             _appRecipes.AddCommand(new ExplainCommand(_appRecipes));
             _appRecipes.AddCommand(new HelpCommand(_appRecipes));
-            _appRecipes.AddCommand(new AddRecipes(_appRecipes, _listRecipes));
-            _appRecipes.AddCommand(new ChangeRecipes(_appRecipes, _listRecipes));
-            _appRecipes.AddCommand(new ClearRecipes(_appRecipes, _listRecipes));
-            _appRecipes.AddCommand(new CookRecipes(_appRecipes, _listRecipes, _availabilityProducts, _necessaryProducts, _consumptionProducts));
-            _appRecipes.AddCommand(new DisplayRecipes(_appRecipes, _listRecipes, _availableRecipes, _availabilityProducts, _necessaryProducts));
-            _appRecipes.AddCommand(new DisplayCategory(_appRecipes, _listRecipes, _availabilityProducts, _necessaryProducts));
-            _appRecipes.AddCommand(new InfoRecipes(_appRecipes, _listRecipes, _availabilityProducts, _necessaryProducts));
-            _appRecipes.AddCommand(new RemoveRecipes(_appRecipes, _listRecipes));
+            _appRecipes.AddCommand(new AddRecipes(_listRecipes));
+            _appRecipes.AddCommand(new ChangeRecipes(_listRecipes));
+            _appRecipes.AddCommand(new ClearRecipes(_listRecipes));
+            _appRecipes.AddCommand(new CookRecipes(_listRecipes, _availabilityProducts, _necessaryProducts, _consumptionProducts));
+            _appRecipes.AddCommand(new DisplayRecipes(_listRecipes, _availableRecipes, _availabilityProducts, _necessaryProducts));
+            _appRecipes.AddCommand(new DisplayCategory(_listRecipes, _availabilityProducts, _necessaryProducts));
+            _appRecipes.AddCommand(new InfoRecipes(_listRecipes, _availabilityProducts, _necessaryProducts));
+            _appRecipes.AddCommand(new RemoveRecipes(_listRecipes));
         }
     }
 }

@@ -7,8 +7,6 @@ namespace PocketGranny.Commands
 {
     public class AddCheck : ICommand
     {
-        private Application _app;
-
         private ListCategoriesCommodity _availabilityProducts;
 
         private ListCategoriesCommodity _necessaryProducts;
@@ -17,9 +15,8 @@ namespace PocketGranny.Commands
 
         private DateTime _date = DateTime.Today;
 
-        public AddCheck(Application app, ListCategoriesCommodity availabilityProducts, ListCategoriesCommodity necessaryProducts, ListConsumptionProducts consumptionProducts)
+        public AddCheck(ListCategoriesCommodity availabilityProducts, ListCategoriesCommodity necessaryProducts, ListConsumptionProducts consumptionProducts)
         {
-            _app = app;
             _availabilityProducts = availabilityProducts;
             _necessaryProducts = necessaryProducts;
             _consumptionProducts = consumptionProducts;

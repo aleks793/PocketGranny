@@ -6,13 +6,10 @@ namespace PocketGranny.Commands.PossibleRecipes
 {
     public class DisplayPossibleRecipes : ICommand
     {
-        private Application _app;
-
         private List<Recipe> _recipes;
 
-        public DisplayPossibleRecipes(Application app, List<Recipe> recipes)
+        public DisplayPossibleRecipes(List<Recipe> recipes)
         {
-            _app = app;
             _recipes = recipes;
         }
 
